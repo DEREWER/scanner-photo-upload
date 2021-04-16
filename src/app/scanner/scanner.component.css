@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+label {
+  font-size: 12pt;
+  padding: 5px;
+  margin: auto;
+  border: 2px solid #555;
+  transition: .5s;
+  border-radius: 4px;
+}
+
+label:hover {
+  background-color: rgba(150, 150, 150, .5);
+}
+
+.input {
+  display: none;
+}
+
+.upload {
+  font-size: 12pt;
+  width: 130px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(220,54,92);
+  color: white;
+}
+
+div {
+  margin: 0 auto;
+}
