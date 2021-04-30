@@ -23,9 +23,9 @@ export class ScannerComponent implements OnInit {
     console.log(this.selectedFiles);
   }
 
-  onUpload(): Observable<any[]> {
-    return this.http.post<any>(this.direction, this.selectedFiles);
-  }
+  // onUpload(): Observable<any[]> {
+  //   return this.http.post<any>(this.direction, this.selectedFiles);
+  // }
 
   ngOnInit(): void {
   }

@@ -30,8 +30,23 @@ label:hover {
   border: none;
   background-color: rgb(220,54,92);
   color: white;
+  transition: .5s ease;
+}
+
+.upload:hover {
+  background-color: rgb(217, 23, 62);
+  /*
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
+
+   */
 }
 
 div {
   margin: 0 auto;
+}
+
+form {
+  display: inline;
 }

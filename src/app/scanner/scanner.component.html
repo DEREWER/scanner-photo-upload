@@ -1,8 +1,13 @@
 <div>
-  <label for="cameraInput">
-    <span *ngIf="!len">Выбрать файлы</span>
-    <span *ngIf="len">{{len}} файлов выбрано</span>
-  </label>
-  <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" (change)="onFileSelected($event)" class="input" multiple>
-  <button type="button" (click)="onUpload()" class="upload">Загрузить файлы</button>
+
+    <label for="cameraInput">
+      <span *ngIf="!len">Выбрать файлы</span>
+      <span *ngIf="len>1&&len<5">{{len}} файла выбрано</span>
+      <span *ngIf="len>=5">{{len}} файлов выбрано</span>
+      <span *ngIf="len==1">1 файл выбран</span>
+    </label>
+  <form method="POST" action="https://dev.samaglobal.online/api/olympiads/check-blank/" enctype="multipart/form-data">
+    <input type="file" capture="camera" accept="image/*" id="cameraInput" name="file" (change)="onFileSelected($event)" class="input" multiple>
+    <button type="submit" class="upload">Загрузить файлы</button>
+  </form>
 </div>
